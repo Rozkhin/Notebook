@@ -9,6 +9,8 @@ public class Record {
     private String name;
     private String lastName;
     private String phone;
+    private String Email;
+
 
 
 
@@ -36,6 +38,10 @@ public class Record {
         return phone;
     }
 
+    public String getEmail() {
+        return Email;
+    }
+
 //setter
     public void setName(String name) {
         this.name = name;
@@ -49,6 +55,10 @@ public class Record {
         this.phone = phone;
     }
 
+    public void setEmail(String Email) {
+        this.phone = Email;
+    }
+
     //formatirovanie stroki vivoda
     @Override
     public String toString() {
@@ -57,6 +67,7 @@ public class Record {
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +
+                ", Email='" + Email + '\'' +
                 '}';
     }
 }

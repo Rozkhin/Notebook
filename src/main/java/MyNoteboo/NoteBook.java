@@ -1,6 +1,6 @@
 package MyNoteboo;
 
-import asg.cliche.Command;
+import asg.cliche .Command;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +11,12 @@ import java.util.List;
 public class NoteBook {
     private List<Record> records = new ArrayList<>();
 @Command
-    public void create(String name,String lastName,String phone) {
+    public void create(String name,String lastName,String phone,String Email) {
         Record r = new Record();
         r.setName(name);
         r.setLastName(lastName);
         r.setPhone(phone);
+        r.setEmail(Email);
         records.add(r);
 
     }
